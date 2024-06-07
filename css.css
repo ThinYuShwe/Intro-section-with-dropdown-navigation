@@ -1,0 +1,360 @@
+body,
+main,
+img,
+header,
+div,
+section,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --almostWhite: hsl(0, 0%, 98%);
+  --mediumGray: hsl(0, 0%, 41%);
+  --almostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  font-family: "Epilogue", sans-serif;
+  background-color: var(--almostWhite);
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.iconMenu {
+  width: 2.5rem;
+}
+
+.mobilenavLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: var(--almostWhite);
+  width: 68%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: var(--mediumGray);
+  display: none;
+}
+
+.mobilenavLinks img {
+  width: 1rem;
+}
+
+.mobilenavLinks a {
+  cursor: pointer;
+  margin: 30px 0px 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--mediumGray);
+}
+
+.cross-x {
+  font-size: 3rem;
+  font-weight: lighter;
+  position: relative;
+  left: 80%;
+  cursor: pointer;
+}
+
+.mobileauthContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mobileauthContainer button {
+  background-color: white;
+  color: var(--mediumGray);
+  border: 2px solid var(--mediumGray);
+  border-radius: 0.5rem;
+}
+
+/* ******************for desktop************ */
+
+a {
+  text-decoration: none;
+}
+
+.navContainer {
+  display: flex;
+  gap: 3rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navLinks a {
+  color: var(--mediumGray);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navLinks a:hover {
+  color: var(--almostBlack);
+}
+
+.navLinks img {
+  width: 1rem;
+}
+
+.authContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  display: none;
+}
+
+.authContainer a {
+  color: var(--mediumGray);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.authContainer button {
+  background-color: white;
+  color: var(--mediumGray);
+  border-radius: 1rem;
+  border-color: var(--mediumGray);
+  cursor: pointer;
+}
+
+.featuresDropdown {
+  position: relative;
+}
+
+.featuresDropdown .first {
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  left: 4.5rem;
+  top: -7rem;
+  display: none;
+}
+
+.featuresDropdown .first a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.featuresDropdown a img {
+  width: 1.1rem;
+}
+
+.featuresDropdown .second {
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  position: absolute;
+  background-color: white;
+  left: 16.5rem;
+  top: -7rem;
+  display: none;
+}
+
+.featuresDropdown a {
+  color: var(--mediumGray);
+}
+
+.firstarrowUp,
+.secondarrowUp {
+  display: none;
+}
+
+.firstarrowUpMobileNav,
+.secondarrowUpMobileNav {
+  display: none;
+}
+
+.firstMobileNav,
+.secondMobileNav {
+  display: flex;
+  flex-direction: column;
+  color: var(--mediumGray);
+  margin-left: 2rem;
+  display: none;
+}
+
+.firstMobileNav a,
+.secondMobileNav a {
+  color: var(--mediumGray);
+  cursor: pointer;
+}
+
+/* ******************for desktop************ */
+
+.desktopMainImage {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1.2rem;
+}
+
+p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: "Epilogue", sans-serif;
+}
+
+section h1 {
+  font-size: 2.2rem;
+}
+
+.imgGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 1rem;
+}
+
+.imgGroup img {
+  width: 5rem;
+}
+
+button {
+  width: 8.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+section button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 75rem) {
+  header {
+    padding: 1rem;
+  }
+
+  .iconMenu {
+    display: none;
+  }
+
+  .mainContent {
+    display: flex;
+  }
+
+  body {
+    min-height: 0;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4rem;
+    gap: 5rem;
+  }
+
+  .mainContent > div,
+  .mainContent > section {
+    flex: 1;
+  }
+
+  .mobileMainImage {
+    display: none;
+  }
+
+  .desktopMainImage {
+    display: block;
+  }
+
+  section {
+    align-items: start;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  section h1 {
+    font-size: 4.5rem;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    color: var(--mediumGray);
+  }
+
+  button {
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .imgGroup {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .navLinks {
+    display: flex;
+  }
+
+  .authContainer {
+    display: flex;
+  }
+}

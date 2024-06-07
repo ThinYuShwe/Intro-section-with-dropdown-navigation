@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navContainer">
+          <img src="logo.svg" alt="logo" class="logo" />
+          <div class="navLinks">
+            <a href="#">
+              Features
+              <img src="icon-arrow-down.svg" alt="" class="firstarrowDown" />
+              <img src="icon-arrow-up.svg" alt="" class="firstarrowUp" />
+            </a>
+            <a href="#">
+              Company
+              <img src="icon-arrow-down.svg" alt="" class="secondarrowDown" />
+              <img src="icon-arrow-up.svg" alt="" class="secondarrowUp" />
+            </a>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+        </nav>
+        <div class="authContainer">
+          <a href="#" class="loginLink">Login</a>
+          <button class="registerButton">Register</button>
+        </div>
+        <img src="icon-menu.svg" alt="Menu Icon" class="iconMenu" />
+      </header>
+      <div class="mobilenavLinks">
+        <span class="cross-x">x</span>
+        <div>
+          <a href="#">
+            Features
+            <img
+              src="icon-arrow-down.svg"
+              alt=""
+              class="firstarrowDownMobileNav"
+            />
+            <img src="icon-arrow-up.svg" alt="" class="firstarrowUpMobileNav" />
+          </a>
+          <div class="firstMobileNav">
+            <a href="#">
+              <img src="icon-todo.svg" alt="" />
+              Todo List
+            </a>
+            <a href="#">
+              <img src="icon-calendar.svg" alt="" />
+              Calender
+            </a>
+            <a href="#">
+              <img src="icon-reminders.svg" alt="" />
+              Reminders
+            </a>
+            <a href="#">
+              <img src="icon-planning.svg" alt="" />
+              Planning
+            </a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            Company
+            <img
+              src="icon-arrow-down.svg"
+              alt=""
+              class="secondarrowDownMobileNav"
+            />
+            <img
+              src="icon-arrow-up.svg"
+              alt=""
+              class="secondarrowUpMobileNav"
+            />
+          </a>
+          <div class="secondMobileNav">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+
+        <div class="mobileauthContainer">
+          <p class="loginLink">Login</p>
+          <button class="registerButton">Register</button>
+        </div>
+      </div>
+      <div class="featuresDropdown">
+        <div class="first">
+          <a href="#">
+            <img src="icon-todo.svg" alt="" />
+            Todo List
+          </a>
+          <a href="#">
+            <img src="icon-calendar.svg" alt="" />
+            Calender
+          </a>
+          <a href="#">
+            <img src="icon-reminders.svg" alt="" />
+            Reminders
+          </a>
+          <a href="#">
+            <img src="icon-planning.svg" alt="" />
+            Planning
+          </a>
+        </div>
+        <div class="second">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div>
+          <img
+            src="image-hero-mobile.png"
+            alt="Hero image mobile"
+            class="mobileMainImage"
+          />
+          <img
+            src="image-hero-desktop.png"
+            alt="Hero image desktop"
+            class="desktopMainImage"
+          />
+        </div>
+        <section>
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+          <div class="imgGroup">
+            <a href="#"
+              ><img src="client-databiz.svg" alt="Databiz client logo"
+            /></a>
+            <a href="#"
+              ><img src="client-audiophile.svg" alt="Audiophile client logo"
+            /></a>
+            <a href="#"><img src="client-meet.svg" alt="Meet client logo" /></a>
+            <a href="#"
+              ><img src="client-maker.svg" alt="Maker client logo"
+            /></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="JavaScript.js"></script>
+  </body>
+</html>
